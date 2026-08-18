@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>タスク編集</title>
+</head>
+<body>
+
+<h1>タスク編集</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">戻る</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>時間管理アプリ</title>
+
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+</head>
+
+<body>
+
+    <h1>タスク一覧</h1>
+
+
+    <ul>
+        {% for task in tasks %}
+        <li class="task">
+
+            {{ task.title }}<br>
+            作成日時: {{ task.created_at }}<br>
+
+            <span style="color: red;">締切: {{ task.deadline }}</span><br>
+
+            <a href="{% url 'task_update' task.id %}" class="update-btn">
+                編集
+
+            </a><br>
+            <a href="{% url 'task_delete' task.id %}" class="delete-btn" onclick="return confirm('本当に削除しますか？');">
+                削除
+            </a>
+
+
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'task_create' %}" class="create-btn">新しいタスクを作成する
+    </a>
+
+</body>
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit" class="logout-btn">ログアウト</button>
+</form>
+
+</html>
