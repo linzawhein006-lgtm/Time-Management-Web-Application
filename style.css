@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b8bc9f;
+    margin: 40px;
+}
+
+h1 {
+    color: #cc497d;
+}
+
+li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    list-style: none;
+}
+
+a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.create-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-btn:hover {
+    opacity: 0.8;
+}
