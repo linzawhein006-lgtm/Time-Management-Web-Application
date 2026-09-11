@@ -17,12 +17,11 @@
 
 ## 使用技術
 
-* 言語：
-* フレームワーク：
-* データベース：
-* 開発環境：
+* 言語：Python 3.13
+* フレームワーク：Django
+* データベース：SQLite3
+* 開発環境：VSCode, Windows, Git / GitHub
 
-※使用している技術に合わせて記入してください。
 
 ## 画面構成
 
@@ -61,3 +60,4 @@
 ## 作成者
 
 HEIN LIN ZAW
+[GitHub](https://github.com/linzawhein006-lgtm)
